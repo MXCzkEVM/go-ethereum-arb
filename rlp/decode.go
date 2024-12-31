@@ -22,6 +22,7 @@ import (
 	"encoding/binary"
 	"errors"
 	"fmt"
+	"github.com/mxczkevm/go-ethereum-arb/rlp/internal/rlpstruct"
 	"io"
 	"math/big"
 	"reflect"
@@ -29,7 +30,6 @@ import (
 	"sync"
 
 	"github.com/holiman/uint256"
-	
 )
 
 //lint:ignore ST1012 EOL is not an error.
