@@ -20,9 +20,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/mxczkevm/go-ethereum-arb/common"
+	"github.com/mxczkevm/go-ethereum-arb/core/types"
+	"github.com/mxczkevm/go-ethereum-arb/rlp"
 )
 
 // Constants to match up protocol versions and messages

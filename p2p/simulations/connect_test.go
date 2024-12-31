@@ -19,9 +19,9 @@ package simulations
 import (
 	"testing"
 
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/simulations/adapters"
+	"github.com/mxczkevm/go-ethereum-arb/node"
+	"github.com/mxczkevm/go-ethereum-arb/p2p/enode"
+	"github.com/mxczkevm/go-ethereum-arb/p2p/simulations/adapters"
 )
 
 func newTestNetwork(t *testing.T, nodeCount int) (*Network, []enode.ID) {

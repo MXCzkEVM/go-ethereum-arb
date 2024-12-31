@@ -22,9 +22,9 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/mxczkevm/go-ethereum-arb/common"
+	"github.com/mxczkevm/go-ethereum-arb/common/hexutil"
+	"github.com/mxczkevm/go-ethereum-arb/core/types"
 )
 
 // NotFound is returned by API methods if the requested item does not exist.

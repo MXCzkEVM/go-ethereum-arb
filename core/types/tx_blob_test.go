@@ -4,10 +4,10 @@ import (
 	"crypto/ecdsa"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/crypto/kzg4844"
 	"github.com/holiman/uint256"
+	"github.com/mxczkevm/go-ethereum-arb/common"
+	"github.com/mxczkevm/go-ethereum-arb/crypto"
+	"github.com/mxczkevm/go-ethereum-arb/crypto/kzg4844"
 )
 
 // This test verifies that tx.Hash() is not affected by presence of a BlobTxSidecar.

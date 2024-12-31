@@ -19,7 +19,7 @@ package trie
 import (
 	"maps"
 
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/mxczkevm/go-ethereum-arb/common"
 )
 
 // tracer tracks the changes of trie nodes. During the trie operations,

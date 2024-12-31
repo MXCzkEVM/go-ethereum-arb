@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/tests"
+	"github.com/mxczkevm/go-ethereum-arb/core/vm"
+	"github.com/mxczkevm/go-ethereum-arb/tests"
 	"github.com/urfave/cli/v2"
 )
 

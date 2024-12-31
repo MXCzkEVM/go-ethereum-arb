@@ -53,10 +53,10 @@ import (
 	"time"
 
 	"github.com/cespare/cp"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto/signify"
-	"github.com/ethereum/go-ethereum/internal/build"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/mxczkevm/go-ethereum-arb/common"
+	"github.com/mxczkevm/go-ethereum-arb/crypto/signify"
+	"github.com/mxczkevm/go-ethereum-arb/internal/build"
+	"github.com/mxczkevm/go-ethereum-arb/params"
 )
 
 var (

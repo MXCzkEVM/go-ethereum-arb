@@ -20,7 +20,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common/hexutil"
+	"github.com/mxczkevm/go-ethereum-arb/common/hexutil"
 	"github.com/stretchr/testify/assert"
 )
 

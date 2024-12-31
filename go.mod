@@ -1,4 +1,4 @@
-module github.com/ethereum/go-ethereum
+module github.com/mxczkevm/go-ethereum-arb
 
 go 1.21
 

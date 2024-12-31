@@ -23,22 +23,22 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/accounts/abi"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/asm"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/eth/tracers"
-	"github.com/ethereum/go-ethereum/eth/tracers/logger"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/mxczkevm/go-ethereum-arb/accounts/abi"
+	"github.com/mxczkevm/go-ethereum-arb/common"
+	"github.com/mxczkevm/go-ethereum-arb/consensus"
+	"github.com/mxczkevm/go-ethereum-arb/core"
+	"github.com/mxczkevm/go-ethereum-arb/core/asm"
+	"github.com/mxczkevm/go-ethereum-arb/core/rawdb"
+	"github.com/mxczkevm/go-ethereum-arb/core/state"
+	"github.com/mxczkevm/go-ethereum-arb/core/types"
+	"github.com/mxczkevm/go-ethereum-arb/core/vm"
+	"github.com/mxczkevm/go-ethereum-arb/eth/tracers"
+	"github.com/mxczkevm/go-ethereum-arb/eth/tracers/logger"
+	"github.com/mxczkevm/go-ethereum-arb/params"
 
 	// force-load js tracers to trigger registration
-	_ "github.com/ethereum/go-ethereum/eth/tracers/js"
 	"github.com/holiman/uint256"
+	_ "github.com/mxczkevm/go-ethereum-arb/eth/tracers/js"
 )
 
 func TestDefaults(t *testing.T) {

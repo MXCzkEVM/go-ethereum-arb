@@ -25,7 +25,7 @@ import (
 	"slices"
 	"time"
 
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/mxczkevm/go-ethereum-arb/log"
 )
 
 const (

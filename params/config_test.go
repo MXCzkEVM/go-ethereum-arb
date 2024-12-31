@@ -22,7 +22,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common/math"
+	"github.com/mxczkevm/go-ethereum-arb/common/math"
 	"github.com/stretchr/testify/require"
 )
 

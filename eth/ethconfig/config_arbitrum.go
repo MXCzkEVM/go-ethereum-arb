@@ -16,7 +16,7 @@
 
 package ethconfig
 
-import "github.com/ethereum/go-ethereum/eth/downloader"
+import "github.com/mxczkevm/go-ethereum-arb/eth/downloader"
 
 // The default config with archive mode enabled
 var ArchiveDefaults = Defaults

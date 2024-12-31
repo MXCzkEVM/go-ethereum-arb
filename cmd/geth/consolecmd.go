@@ -20,9 +20,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/console"
-	"github.com/ethereum/go-ethereum/internal/flags"
+	"github.com/mxczkevm/go-ethereum-arb/cmd/utils"
+	"github.com/mxczkevm/go-ethereum-arb/console"
+	"github.com/mxczkevm/go-ethereum-arb/internal/flags"
 	"github.com/urfave/cli/v2"
 )
 

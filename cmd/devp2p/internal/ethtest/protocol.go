@@ -16,8 +16,8 @@
 package ethtest
 
 import (
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/mxczkevm/go-ethereum-arb/p2p"
+	"github.com/mxczkevm/go-ethereum-arb/rlp"
 )
 
 // Unexported devp2p message codes from p2p/peer.go.
