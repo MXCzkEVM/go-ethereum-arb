@@ -21,11 +21,10 @@ import (
 	"time"
 
 	"github.com/holiman/uint256"
-	"github.com/mx
 	"github.com/mxczkevm/go-ethereum-arb/common"
 	"github.com/mxczkevm/go-ethereum-arb/core"
 	"github.com/mxczkevm/go-ethereum-arb/core/types"
-	"github.com/holiman/uint256"
+	"github.com/mxczkevm/go-ethereum-arb/event"
 )
 
 // LazyTransaction contains a small subset of the transaction properties that is

@@ -20,10 +20,9 @@ import (
 	"math/big"
 
 	"github.com/holiman/uint256"
-	"github.com/mx
 	"github.com/mxczkevm/go-ethereum-arb/common"
 	"github.com/mxczkevm/go-ethereum-arb/core/types"
-	"github.com/holiman/uint256"
+	"github.com/mxczkevm/go-ethereum-arb/params"
 )
 
 // OpContext provides the context at which the opcode is being

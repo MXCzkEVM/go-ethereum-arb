@@ -22,7 +22,6 @@ import (
 	"math/big"
 
 	"github.com/holiman/uint256"
-	"github.com/mx
 	"github.com/mxczkevm/go-ethereum-arb/common"
 	"github.com/mxczkevm/go-ethereum-arb/consensus"
 	"github.com/mxczkevm/go-ethereum-arb/consensus/misc/eip1559"
@@ -32,7 +31,7 @@ import (
 	"github.com/mxczkevm/go-ethereum-arb/core/types"
 	"github.com/mxczkevm/go-ethereum-arb/params"
 	"github.com/mxczkevm/go-ethereum-arb/rpc"
-	"github.com/holiman/uint256"
+	"github.com/mxczkevm/go-ethereum-arb/trie"
 )
 
 // Proof-of-stake protocol constants.

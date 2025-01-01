@@ -22,6 +22,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"github.com/mxczkevm/go-ethereum-arb"
 	"math/big"
 	"net/http"
 	"runtime"
@@ -31,8 +32,6 @@ import (
 	"time"
 
 	"github.com/gorilla/websocket"
-	"gith
-	"github.com/mxczkevm/go-ethereum-arb"
 	"github.com/mxczkevm/go-ethereum-arb/common"
 	"github.com/mxczkevm/go-ethereum-arb/common/mclock"
 	"github.com/mxczkevm/go-ethereum-arb/consensus"
@@ -43,7 +42,7 @@ import (
 	"github.com/mxczkevm/go-ethereum-arb/log"
 	"github.com/mxczkevm/go-ethereum-arb/node"
 	"github.com/mxczkevm/go-ethereum-arb/p2p"
-	"github.com/gorilla/websocket"
+	"github.com/mxczkevm/go-ethereum-arb/rpc"
 )
 
 const (

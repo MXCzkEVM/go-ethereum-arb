@@ -24,7 +24,6 @@ import (
 
 	mapset "github.com/deckarep/golang-set/v2"
 	"github.com/holiman/uint256"
-	"github.com/mx
 	"github.com/mxczkevm/go-ethereum-arb/common"
 	"github.com/mxczkevm/go-ethereum-arb/common/math"
 	"github.com/mxczkevm/go-ethereum-arb/consensus"
@@ -35,7 +34,7 @@ import (
 	"github.com/mxczkevm/go-ethereum-arb/core/types"
 	"github.com/mxczkevm/go-ethereum-arb/params"
 	"github.com/mxczkevm/go-ethereum-arb/rlp"
-	"github.com/holiman/uint256"
+	"github.com/mxczkevm/go-ethereum-arb/trie"
 	"golang.org/x/crypto/sha3"
 )
 

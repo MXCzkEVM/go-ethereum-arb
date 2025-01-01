@@ -24,10 +24,9 @@ import (
 	"time"
 
 	"github.com/karalabe/hid"
-	"github.com/mxczkev
 	"github.com/mxczkevm/go-ethereum-arb/accounts"
 	"github.com/mxczkevm/go-ethereum-arb/event"
-	"github.com/karalabe/hid"
+	"github.com/mxczkevm/go-ethereum-arb/log"
 )
 
 // LedgerScheme is the protocol scheme prefixing account and wallet URLs.

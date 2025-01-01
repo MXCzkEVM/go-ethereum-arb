@@ -25,11 +25,10 @@ import (
 
 	"github.com/dop251/goja"
 	"github.com/holiman/uint256"
-	"github.com/mxczkevm
 	"github.com/mxczkevm/go-ethereum-arb/core/tracing"
 	"github.com/mxczkevm/go-ethereum-arb/core/types"
 	"github.com/mxczkevm/go-ethereum-arb/eth/tracers"
-	"github.com/holiman/uint256"
+	"github.com/mxczkevm/go-ethereum-arb/eth/tracers/internal"
 
 	"github.com/mxczkevm/go-ethereum-arb/common"
 	"github.com/mxczkevm/go-ethereum-arb/common/hexutil"

@@ -23,6 +23,7 @@ package debug
 import (
 	"bytes"
 	"errors"
+	"github.com/mxczkevm/go-ethereum-arb/log"
 	"io"
 	"os"
 	"os/user"
@@ -36,7 +37,6 @@ import (
 	"time"
 
 	"github.com/hashicorp/go-bexpr"
-	
 )
 
 // Handler is the global debugging handler.

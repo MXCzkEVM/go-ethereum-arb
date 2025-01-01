@@ -32,8 +32,6 @@ import (
 	"github.com/holiman/billy"
 	"github.com/holiman/uint256"
 	"github.com/mxczkevm/go-ethereum-arb/common"
-	"g
-	"github.com/mxczkevm/go-ethereum-arb/common"
 	"github.com/mxczkevm/go-ethereum-arb/consensus/misc/eip1559"
 	"github.com/mxczkevm/go-ethereum-arb/consensus/misc/eip4844"
 	"github.com/mxczkevm/go-ethereum-arb/core"
@@ -43,8 +41,8 @@ import (
 	"github.com/mxczkevm/go-ethereum-arb/event"
 	"github.com/mxczkevm/go-ethereum-arb/log"
 	"github.com/mxczkevm/go-ethereum-arb/metrics"
-	"github.com/holiman/billy"
-	"github.com/holiman/uint256"
+	"github.com/mxczkevm/go-ethereum-arb/params"
+	"github.com/mxczkevm/go-ethereum-arb/rlp"
 )
 
 const (

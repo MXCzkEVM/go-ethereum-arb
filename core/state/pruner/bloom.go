@@ -24,7 +24,7 @@ import (
 	"io"
 	"os"
 
-	bloomfilter "github.com/holiman/bloomfilter/
+	bloomfilter "github.com/holiman/bloomfilter/v2"
 	"github.com/mxczkevm/go-ethereum-arb/common"
 	"github.com/mxczkevm/go-ethereum-arb/core/rawdb"
 	"github.com/mxczkevm/go-ethereum-arb/log"

@@ -20,13 +20,13 @@ package nat
 import (
 	"errors"
 	"fmt"
+	"github.com/mxczkevm/go-ethereum-arb/log"
 	"net"
 	"strings"
 	"sync"
 	"time"
 
 	natpmp "github.com/jackpal/go-nat-pmp"
-	
 )
 
 // Interface An implementation of nat.Interface can map local ports to ports
