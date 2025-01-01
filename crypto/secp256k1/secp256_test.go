@@ -10,6 +10,7 @@ package secp256k1
 import (
 	"bytes"
 	"crypto/ecdsa"
+	"crypto/elliptic"
 	"crypto/rand"
 	"encoding/hex"
 	"io"
@@ -23,8 +24,7 @@ func generateKeyPair() (pubkey, privkey []byte) {
 	if err != nil {
 		panic(err)
 	}
-	pubkey = S256().Marshal(key.X, key.Y)
-
+	pubkey = elliptic.Marshal(S256(), key.X, key.Y) //nolint:staticcheck // crypto will be refactored soon.
 	privkey = make([]byte, 32)
 	blob := key.D.Bytes()
 	copy(privkey[32-len(blob):], blob)
@@ -48,9 +48,10 @@ func randSig() []byte {
 }
 
 // tests for malleability
-// the highest bit of signature ECDSA s value must be 0, in the 33th byte
+// highest bit of signature ECDSA s value must be 0, in the 33th byte
 func compactSigCheck(t *testing.T, sig []byte) {
-	var b = int(sig[32])
+	t.Helper()
+	b := int(sig[32])
 	if b < 0 {
 		t.Errorf("highest bit is negative: %d", b)
 	}
@@ -147,6 +148,7 @@ func TestRandomMessagesWithRandomKeys(t *testing.T) {
 }
 
 func signAndRecoverWithRandomMessages(t *testing.T, keys func() ([]byte, []byte)) {
+	t.Helper()
 	for i := 0; i < TestCount; i++ {
 		pubkey1, seckey := keys()
 		msg := csprngEntropy(32)
@@ -224,7 +226,10 @@ func BenchmarkSign(b *testing.B) {
 	b.ResetTimer()
 
 	for i := 0; i < b.N; i++ {
-		Sign(msg, seckey)
+		_, err := Sign(msg, seckey)
+		if err != nil {
+			panic(err)
+		}
 	}
 }
 
@@ -235,6 +240,9 @@ func BenchmarkRecover(b *testing.B) {
 	b.ResetTimer()
 
 	for i := 0; i < b.N; i++ {
-		RecoverPubkey(msg, sig)
+		_, err := RecoverPubkey(msg, sig)
+		if err != nil {
+			panic(err)
+		}
 	}
 }

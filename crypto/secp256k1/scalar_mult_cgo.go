@@ -5,6 +5,7 @@
 //go:build !gofuzz && cgo
 // +build !gofuzz,cgo
 
+// nolint // this nolint lets us use this file in its original and unmodified form.
 package secp256k1
 
 import (
@@ -16,7 +17,7 @@ import (
 
 #include "libsecp256k1/include/secp256k1.h"
 
-extern int secp256k1_ext_scalar_mul(const secp256k1_context* ctx, const unsigned char *point, const unsigned char *scalar);
+extern int cosmos_secp256k1_ext_scalar_mul(const secp256k1_context* ctx, const unsigned char *point, const unsigned char *scalar);
 
 */
 import "C"
@@ -39,13 +40,17 @@ func (BitCurve *BitCurve) ScalarMult(Bx, By *big.Int, scalar []byte) (*big.Int, 
 
 	pointPtr := (*C.uchar)(unsafe.Pointer(&point[0]))
 	scalarPtr := (*C.uchar)(unsafe.Pointer(&scalar[0]))
-	res := C.secp256k1_ext_scalar_mul(context, pointPtr, scalarPtr)
+	res := C.cosmos_secp256k1_ext_scalar_mul(context, pointPtr, scalarPtr)
 
 	// Unpack the result and clear temporaries.
 	x := new(big.Int).SetBytes(point[:32])
 	y := new(big.Int).SetBytes(point[32:])
-	clear(point)
-	clear(scalar)
+	for i := range point {
+		point[i] = 0
+	}
+	for i := range padded {
+		scalar[i] = 0
+	}
 	if res != 1 {
 		return nil, nil
 	}
